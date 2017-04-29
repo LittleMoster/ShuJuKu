@@ -1,0 +1,12 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target '数据库操作' do
+
+   pod 'FMDB/SQLCipher'
+   pod 'MJExtension'
+   pod 'Masonry'
+   
+
+
+end

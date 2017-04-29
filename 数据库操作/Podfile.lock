@@ -1,0 +1,25 @@
+PODS:
+  - FMDB/SQLCipher (2.6.2):
+    - SQLCipher
+  - Masonry (1.0.2)
+  - MJExtension (3.0.13)
+  - SQLCipher (3.4.1):
+    - SQLCipher/standard (= 3.4.1)
+  - SQLCipher/common (3.4.1)
+  - SQLCipher/standard (3.4.1):
+    - SQLCipher/common
+
+DEPENDENCIES:
+  - FMDB/SQLCipher
+  - Masonry
+  - MJExtension
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  SQLCipher: 43d12c0eb9c57fb438749618fc3ce0065509a559
+
+PODFILE CHECKSUM: d8416057c1805161baa19181a60e086b4608de40
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		085ACD76EFC9038C2F00D4A5 /* Pods______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C7B869193988E0F18D3E1A /* Pods______.framework */; };
+		950D2E581E8F904400517DB9 /* NSObject+SQLService.m in Sources */ = {isa = PBXBuildFile; fileRef = 950D2E571E8F904400517DB9 /* NSObject+SQLService.m */; };
+		950D2E5B1E8F915500517DB9 /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 950D2E5A1E8F915500517DB9 /* ProductModel.m */; };
+		951EBDB01E8207F700F885CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 951EBDAF1E8207F700F885CE /* main.m */; };
+		951EBDB91E8207F700F885CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951EBDB71E8207F700F885CE /* Main.storyboard */; };
+		951EBDBB1E8207F700F885CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951EBDBA1E8207F700F885CE /* Assets.xcassets */; };
+		951EBDBE1E8207F700F885CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951EBDBC1E8207F700F885CE /* LaunchScreen.storyboard */; };
+		951EBDCF1E820EC500F885CE /* DbService.m in Sources */ = {isa = PBXBuildFile; fileRef = 951EBDCA1E820EC500F885CE /* DbService.m */; };
+		951EBDD01E820EC500F885CE /* FMEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 951EBDCC1E820EC500F885CE /* FMEncryptDatabase.m */; };
+		951EBDD11E820EC500F885CE /* FMEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 951EBDCE1E820EC500F885CE /* FMEncryptDatabaseQueue.m */; };
+		951EBDD41E820ED200F885CE /* EncryptUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 951EBDD31E820ED200F885CE /* EncryptUtils.m */; };
+		951EBDDB1E82143D00F885CE /* TableTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 951EBDDA1E82143D00F885CE /* TableTool.mm */; };
+		951EBE051E821F5B00F885CE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 951EBE041E821F5B00F885CE /* libsqlite3.tbd */; };
+		951EBE071E821F6800F885CE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 951EBE061E821F6800F885CE /* libsqlite3.0.tbd */; };
+		951EBE2D1E82486600F885CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 951EBE2A1E82486600F885CE /* AppDelegate.m */; };
+		951EBE2E1E82486600F885CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951EBE2C1E82486600F885CE /* ViewController.m */; };
+		95B153491E83974600B07821 /* PathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B153481E83974500B07821 /* PathUtils.m */; };
+		95B1534C1E8399DD00B07821 /* FileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B1534B1E8399DD00B07821 /* FileUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D27BBAEA7768F43F934E261 /* Pods-数据库操作.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-数据库操作.debug.xcconfig"; path = "Pods/Target Support Files/Pods-数据库操作/Pods-数据库操作.debug.xcconfig"; sourceTree = "<group>"; };
+		4D9DAD93B4D270A45F2419E3 /* Pods-数据库操作.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-数据库操作.release.xcconfig"; path = "Pods/Target Support Files/Pods-数据库操作/Pods-数据库操作.release.xcconfig"; sourceTree = "<group>"; };
+		950D2E561E8F904400517DB9 /* NSObject+SQLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SQLService.h"; sourceTree = "<group>"; };
+		950D2E571E8F904400517DB9 /* NSObject+SQLService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SQLService.m"; sourceTree = "<group>"; };
+		950D2E591E8F915500517DB9 /* ProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductModel.h; sourceTree = "<group>"; };
+		950D2E5A1E8F915500517DB9 /* ProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductModel.m; sourceTree = "<group>"; };
+		951EBDAB1E8207F700F885CE /* 数据库操作.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "数据库操作.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		951EBDAF1E8207F700F885CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		951EBDB81E8207F700F885CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		951EBDBA1E8207F700F885CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		951EBDBD1E8207F700F885CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		951EBDBF1E8207F700F885CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		951EBDC81E820EC500F885CE /* ColumnPropertyMappingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnPropertyMappingDelegate.h; sourceTree = "<group>"; };
+		951EBDC91E820EC500F885CE /* DbService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbService.h; sourceTree = "<group>"; };
+		951EBDCA1E820EC500F885CE /* DbService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbService.m; sourceTree = "<group>"; };
+		951EBDCB1E820EC500F885CE /* FMEncryptDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabase.h; sourceTree = "<group>"; };
+		951EBDCC1E820EC500F885CE /* FMEncryptDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptDatabase.m; sourceTree = "<group>"; };
+		951EBDCD1E820EC500F885CE /* FMEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabaseQueue.h; sourceTree = "<group>"; };
+		951EBDCE1E820EC500F885CE /* FMEncryptDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptDatabaseQueue.m; sourceTree = "<group>"; };
+		951EBDD21E820ED200F885CE /* EncryptUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptUtils.h; sourceTree = "<group>"; };
+		951EBDD31E820ED200F885CE /* EncryptUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptUtils.m; sourceTree = "<group>"; };
+		951EBDD91E82143D00F885CE /* TableTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableTool.h; sourceTree = "<group>"; };
+		951EBDDA1E82143D00F885CE /* TableTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TableTool.mm; sourceTree = "<group>"; };
+		951EBE041E821F5B00F885CE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		951EBE061E821F6800F885CE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		951EBE291E82486600F885CE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		951EBE2A1E82486600F885CE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		951EBE2B1E82486600F885CE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		951EBE2C1E82486600F885CE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9571E5C51E88E68500793812 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9571E5C61E88E91200793812 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		95B153471E83974500B07821 /* PathUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathUtils.h; sourceTree = "<group>"; };
+		95B153481E83974500B07821 /* PathUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathUtils.m; sourceTree = "<group>"; };
+		95B1534A1E8399DC00B07821 /* FileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtils.h; sourceTree = "<group>"; };
+		95B1534B1E8399DD00B07821 /* FileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtils.m; sourceTree = "<group>"; };
+		C1C7B869193988E0F18D3E1A /* Pods______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods______.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		951EBDA81E8207F700F885CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951EBE071E821F6800F885CE /* libsqlite3.0.tbd in Frameworks */,
+				951EBE051E821F5B00F885CE /* libsqlite3.tbd in Frameworks */,
+				085ACD76EFC9038C2F00D4A5 /* Pods______.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D6A67796B1B8A9C4BB09C5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D27BBAEA7768F43F934E261 /* Pods-数据库操作.debug.xcconfig */,
+				4D9DAD93B4D270A45F2419E3 /* Pods-数据库操作.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		951EBDA21E8207F700F885CE = {
+			isa = PBXGroup;
+			children = (
+				951EBDAD1E8207F700F885CE /* 数据库操作 */,
+				951EBDAC1E8207F700F885CE /* Products */,
+				951EBE031E821F5B00F885CE /* Frameworks */,
+				2D6A67796B1B8A9C4BB09C5B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		951EBDAC1E8207F700F885CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				951EBDAB1E8207F700F885CE /* 数据库操作.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		951EBDAD1E8207F700F885CE /* 数据库操作 */ = {
+			isa = PBXGroup;
+			children = (
+				951EBE281E82486600F885CE /* ViewController */,
+				951EBDD81E82143D00F885CE /* 操作数据库 */,
+				951EBDC61E820EC500F885CE /* 加密数据库操作 */,
+				951EBDC51E820B6500F885CE /* 加密数据库 */,
+				951EBDB71E8207F700F885CE /* Main.storyboard */,
+				951EBDBA1E8207F700F885CE /* Assets.xcassets */,
+				951EBDBC1E8207F700F885CE /* LaunchScreen.storyboard */,
+				951EBDBF1E8207F700F885CE /* Info.plist */,
+				951EBDAE1E8207F700F885CE /* Supporting Files */,
+			);
+			path = "数据库操作";
+			sourceTree = "<group>";
+		};
+		951EBDAE1E8207F700F885CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				951EBDAF1E8207F700F885CE /* main.m */,
+				9571E5C51E88E68500793812 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		951EBDC51E820B6500F885CE /* 加密数据库 */ = {
+			isa = PBXGroup;
+			children = (
+				951EBDD21E820ED200F885CE /* EncryptUtils.h */,
+				951EBDD31E820ED200F885CE /* EncryptUtils.m */,
+			);
+			path = "加密数据库";
+			sourceTree = "<group>";
+		};
+		951EBDC61E820EC500F885CE /* 加密数据库操作 */ = {
+			isa = PBXGroup;
+			children = (
+				951EBDC71E820EC500F885CE /* EncryptFMDB */,
+			);
+			path = "加密数据库操作";
+			sourceTree = "<group>";
+		};
+		951EBDC71E820EC500F885CE /* EncryptFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				951EBDC81E820EC500F885CE /* ColumnPropertyMappingDelegate.h */,
+				951EBDC91E820EC500F885CE /* DbService.h */,
+				951EBDCA1E820EC500F885CE /* DbService.m */,
+				951EBDCB1E820EC500F885CE /* FMEncryptDatabase.h */,
+				951EBDCC1E820EC500F885CE /* FMEncryptDatabase.m */,
+				951EBDCD1E820EC500F885CE /* FMEncryptDatabaseQueue.h */,
+				951EBDCE1E820EC500F885CE /* FMEncryptDatabaseQueue.m */,
+			);
+			path = EncryptFMDB;
+			sourceTree = "<group>";
+		};
+		951EBDD81E82143D00F885CE /* 操作数据库 */ = {
+			isa = PBXGroup;
+			children = (
+				951EBDD91E82143D00F885CE /* TableTool.h */,
+				951EBDDA1E82143D00F885CE /* TableTool.mm */,
+				95B153471E83974500B07821 /* PathUtils.h */,
+				95B153481E83974500B07821 /* PathUtils.m */,
+				95B1534A1E8399DC00B07821 /* FileUtils.h */,
+				95B1534B1E8399DD00B07821 /* FileUtils.m */,
+				950D2E561E8F904400517DB9 /* NSObject+SQLService.h */,
+				950D2E571E8F904400517DB9 /* NSObject+SQLService.m */,
+			);
+			path = "操作数据库";
+			sourceTree = "<group>";
+		};
+		951EBE031E821F5B00F885CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9571E5C61E88E91200793812 /* Security.framework */,
+				951EBE061E821F6800F885CE /* libsqlite3.0.tbd */,
+				951EBE041E821F5B00F885CE /* libsqlite3.tbd */,
+				C1C7B869193988E0F18D3E1A /* Pods______.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		951EBE281E82486600F885CE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				951EBE291E82486600F885CE /* AppDelegate.h */,
+				951EBE2A1E82486600F885CE /* AppDelegate.m */,
+				951EBE2B1E82486600F885CE /* ViewController.h */,
+				951EBE2C1E82486600F885CE /* ViewController.m */,
+				950D2E591E8F915500517DB9 /* ProductModel.h */,
+				950D2E5A1E8F915500517DB9 /* ProductModel.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		951EBDAA1E8207F700F885CE /* 数据库操作 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 951EBDC21E8207F700F885CE /* Build configuration list for PBXNativeTarget "数据库操作" */;
+			buildPhases = (
+				5F968E940B5C0DB243830E6B /* [CP] Check Pods Manifest.lock */,
+				951EBDA71E8207F700F885CE /* Sources */,
+				951EBDA81E8207F700F885CE /* Frameworks */,
+				951EBDA91E8207F700F885CE /* Resources */,
+				3DAEF26ECB0294F4A973EF92 /* [CP] Embed Pods Frameworks */,
+				61AF954D38E5A9B5C0B27614 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "数据库操作";
+			productName = "数据库操作";
+			productReference = 951EBDAB1E8207F700F885CE /* 数据库操作.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		951EBDA31E8207F700F885CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = zjq;
+				TargetAttributes = {
+					951EBDAA1E8207F700F885CE = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 951EBDA61E8207F700F885CE /* Build configuration list for PBXProject "数据库操作" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 951EBDA21E8207F700F885CE;
+			productRefGroup = 951EBDAC1E8207F700F885CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				951EBDAA1E8207F700F885CE /* 数据库操作 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		951EBDA91E8207F700F885CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951EBDBE1E8207F700F885CE /* LaunchScreen.storyboard in Resources */,
+				951EBDBB1E8207F700F885CE /* Assets.xcassets in Resources */,
+				951EBDB91E8207F700F885CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DAEF26ECB0294F4A973EF92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-数据库操作/Pods-数据库操作-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F968E940B5C0DB243830E6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61AF954D38E5A9B5C0B27614 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-数据库操作/Pods-数据库操作-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		951EBDA71E8207F700F885CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B1534C1E8399DD00B07821 /* FileUtils.m in Sources */,
+				951EBDCF1E820EC500F885CE /* DbService.m in Sources */,
+				95B153491E83974600B07821 /* PathUtils.m in Sources */,
+				951EBDD11E820EC500F885CE /* FMEncryptDatabaseQueue.m in Sources */,
+				951EBDDB1E82143D00F885CE /* TableTool.mm in Sources */,
+				951EBE2E1E82486600F885CE /* ViewController.m in Sources */,
+				950D2E581E8F904400517DB9 /* NSObject+SQLService.m in Sources */,
+				950D2E5B1E8F915500517DB9 /* ProductModel.m in Sources */,
+				951EBDD01E820EC500F885CE /* FMEncryptDatabase.m in Sources */,
+				951EBDD41E820ED200F885CE /* EncryptUtils.m in Sources */,
+				951EBDB01E8207F700F885CE /* main.m in Sources */,
+				951EBE2D1E82486600F885CE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		951EBDB71E8207F700F885CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				951EBDB81E8207F700F885CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		951EBDBC1E8207F700F885CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				951EBDBD1E8207F700F885CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		951EBDC01E8207F700F885CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		951EBDC11E8207F700F885CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		951EBDC31E8207F700F885CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D27BBAEA7768F43F934E261 /* Pods-数据库操作.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "数据库操作/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yonxin.sjk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		951EBDC41E8207F700F885CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9DAD93B4D270A45F2419E3 /* Pods-数据库操作.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "数据库操作/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yonxin.sjk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		951EBDA61E8207F700F885CE /* Build configuration list for PBXProject "数据库操作" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				951EBDC01E8207F700F885CE /* Debug */,
+				951EBDC11E8207F700F885CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		951EBDC21E8207F700F885CE /* Build configuration list for PBXNativeTarget "数据库操作" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				951EBDC31E8207F700F885CE /* Debug */,
+				951EBDC41E8207F700F885CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 951EBDA31E8207F700F885CE /* Project object */;
+}
