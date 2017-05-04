@@ -1,0 +1,306 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/FMDB/FMDB.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FMDB-Swift.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/FMDB/FMDB.framework/Headers/FMDB-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDB-umbrella.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Target Support Files/FMDB/FMDB-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDB.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/FMDB/src/fmdb/FMDB.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDatabase.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/FMDB/src/fmdb/FMDatabase.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDatabaseAdditions.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/FMDB/src/fmdb/FMDatabaseAdditions.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDatabasePool.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/FMDB/src/fmdb/FMDatabasePool.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDatabaseQueue.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/FMDB/src/fmdb/FMDatabaseQueue.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMResultSet.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/FMDB/src/fmdb/FMResultSet.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/FMDB/FMDB.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Intermediates/Pods.build/Debug-iphonesimulator/FMDB.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/MJExtension/MJExtension.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "MJExtension-Swift.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/MJExtension/MJExtension.framework/Headers/MJExtension-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "MJExtension-umbrella.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Target Support Files/MJExtension/MJExtension-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "MJExtension.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/MJExtension/MJExtension/MJExtension.h"
+        },
+        {
+          'type': 'file',
+          'name': "MJExtensionConst.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/MJExtension/MJExtension/MJExtensionConst.h"
+        },
+        {
+          'type': 'file',
+          'name': "MJFoundation.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/MJExtension/MJExtension/MJFoundation.h"
+        },
+        {
+          'type': 'file',
+          'name': "MJProperty.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/MJExtension/MJExtension/MJProperty.h"
+        },
+        {
+          'type': 'file',
+          'name': "MJPropertyKey.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/MJExtension/MJExtension/MJPropertyKey.h"
+        },
+        {
+          'type': 'file',
+          'name': "MJPropertyType.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/MJExtension/MJExtension/MJPropertyType.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+MJClass.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/MJExtension/MJExtension/NSObject+MJClass.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+MJCoding.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/MJExtension/MJExtension/NSObject+MJCoding.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+MJKeyValue.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/MJExtension/MJExtension/NSObject+MJKeyValue.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+MJProperty.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/MJExtension/MJExtension/NSObject+MJProperty.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+MJExtension.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/MJExtension/MJExtension/NSString+MJExtension.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/MJExtension/MJExtension.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Intermediates/Pods.build/Debug-iphonesimulator/MJExtension.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/Masonry/Masonry.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "MASCompositeConstraint.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/MASCompositeConstraint.h"
+        },
+        {
+          'type': 'file',
+          'name': "MASConstraint+Private.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/MASConstraint+Private.h"
+        },
+        {
+          'type': 'file',
+          'name': "MASConstraint.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/MASConstraint.h"
+        },
+        {
+          'type': 'file',
+          'name': "MASConstraintMaker.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/MASConstraintMaker.h"
+        },
+        {
+          'type': 'file',
+          'name': "MASLayoutConstraint.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/MASLayoutConstraint.h"
+        },
+        {
+          'type': 'file',
+          'name': "MASUtilities.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/MASUtilities.h"
+        },
+        {
+          'type': 'file',
+          'name': "MASViewAttribute.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/MASViewAttribute.h"
+        },
+        {
+          'type': 'file',
+          'name': "MASViewConstraint.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/MASViewConstraint.h"
+        },
+        {
+          'type': 'file',
+          'name': "Masonry-Swift.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/Masonry/Masonry.framework/Headers/Masonry-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Masonry-umbrella.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Target Support Files/Masonry/Masonry-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Masonry.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/Masonry.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSArray+MASAdditions.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/NSArray+MASAdditions.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSArray+MASShorthandAdditions.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/NSArray+MASShorthandAdditions.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSLayoutConstraint+MASDebugAdditions.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/NSLayoutConstraint+MASDebugAdditions.h"
+        },
+        {
+          'type': 'file',
+          'name': "View+MASAdditions.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/View+MASAdditions.h"
+        },
+        {
+          'type': 'file',
+          'name': "View+MASShorthandAdditions.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/View+MASShorthandAdditions.h"
+        },
+        {
+          'type': 'file',
+          'name': "ViewController+MASAdditions.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Masonry/Masonry/ViewController+MASAdditions.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/Masonry/Masonry.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Intermediates/Pods.build/Debug-iphonesimulator/Masonry.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/Pods______.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-\u6570\u636E\u5E93\u64CD\u4F5C-umbrella.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Target Support Files/Pods-\u6570\u636E\u5E93\u64CD\u4F5C/Pods-\u6570\u636E\u5E93\u64CD\u4F5C-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods______-Swift.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/Pods______.framework/Headers/Pods______-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/Pods______.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-\u6570\u636E\u5E93\u64CD\u4F5C.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/SQLCipher/SQLCipher.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SQLCipher-Swift.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/SQLCipher/SQLCipher.framework/Headers/SQLCipher-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SQLCipher-umbrella.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/Target Support Files/SQLCipher/SQLCipher-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "sqlite3.h",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/Pods/SQLCipher/sqlite3.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Products/Debug-iphonesimulator/SQLCipher/SQLCipher.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/cguo/Desktop/ShuJuKu/\u6570\u636E\u5E93\u64CD\u4F5C/DerivedData/\u6570\u636E\u5E93\u64CD\u4F5C/Build/Intermediates/Pods.build/Debug-iphonesimulator/SQLCipher.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

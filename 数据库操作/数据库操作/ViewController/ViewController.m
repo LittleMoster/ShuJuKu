@@ -32,7 +32,10 @@
     [super viewDidLoad];
 
     
-   //   [self Sqlite];
+      [self Sqlite];
+
+    ProductModel *model=[[ProductModel alloc]init];
+    
     
 }
 

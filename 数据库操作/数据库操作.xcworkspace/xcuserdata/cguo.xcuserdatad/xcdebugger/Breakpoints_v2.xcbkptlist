@@ -13,22 +13,6 @@
             timestampString = "515053657.537044"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "353"
-            endingLineNumber = "353"
-            landmarkName = "-GetTableByModel"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x6570;&#x636e;&#x5e93;&#x64cd;&#x4f5c;/&#x64cd;&#x4f5c;&#x6570;&#x636e;&#x5e93;/NSObject+SQLService.m"
-            timestampString = "515053657.537044"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "365"
             endingLineNumber = "365"
             landmarkName = "-GetTableByModel"
@@ -128,38 +112,6 @@
             startingLineNumber = "138"
             endingLineNumber = "138"
             landmarkName = "-CopySqldb"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x6570;&#x636e;&#x5e93;&#x64cd;&#x4f5c;/&#x64cd;&#x4f5c;&#x6570;&#x636e;&#x5e93;/NSObject+SQLService.m"
-            timestampString = "515053657.537044"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "349"
-            endingLineNumber = "349"
-            landmarkName = "-GetTableByModel"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x6570;&#x636e;&#x5e93;&#x64cd;&#x4f5c;/&#x64cd;&#x4f5c;&#x6570;&#x636e;&#x5e93;/NSObject+SQLService.m"
-            timestampString = "515053657.537044"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "339"
-            endingLineNumber = "339"
-            landmarkName = "-GetTableByModel"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
