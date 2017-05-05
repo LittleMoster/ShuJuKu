@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FMDB.h"
-#define isEncry @"NO"
+#define isEncry @"NO"  //YES代表加密--NO代表不加密
 #define EncryKey @"123456abc"
 
 

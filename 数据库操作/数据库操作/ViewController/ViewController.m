@@ -34,7 +34,7 @@
     
       [self Sqlite];
 
-    ProductModel *model=[[ProductModel alloc]init];
+//    ProductModel *model=[[ProductModel alloc]init];
     
     
 }
@@ -51,14 +51,17 @@
     NSMutableArray *arr=[ProductModel GetModelArrByTableWithArr:@[model.ID,model.name]];
     NSLog(@"%ld",arr.count);
     ProductModel *model12=[ProductModel GetModelByTableWithId:@"123"];
-    NSLog(@"%@",model12.ID);
-        
+    NSLog(@"%@",model12.url);
+    
+//    [model DeleteModelByTable];
+  //  [model DeleteModelByTableWithKey:@"123"];
+ //   [model DeleteModelByTableWithArr:@[model.ID,[NSNumber numberWithInt:model.age]]];
 
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-
+    [self Sqlite];
 }
 
 

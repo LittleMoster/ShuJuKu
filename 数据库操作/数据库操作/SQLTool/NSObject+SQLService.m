@@ -12,6 +12,7 @@
 #import "PathUtils.h"
 #import "DbService.h"
 #import <objc/message.h>
+#define AddTextFrist @"家"
 @implementation NSObject (SQLService)
 
 
@@ -39,7 +40,7 @@
                 
      
 //            在text前面添加中文，避免出错，由于当保存的字段是NSString类型，并且没有汉字时会报错，所以就在TEXT类型的数据前面默认添加一个汉字。
-                NSString* valueStr=[@"家" stringByAppendingString:[self valueForKey:valueName]];
+                NSString* valueStr=[AddTextFrist stringByAppendingString:[self valueForKey:valueName]];
                 [valueArr addObject:valueStr];
                 [KeyArr addObject:valueName];
             }else
@@ -57,7 +58,51 @@
     return success;
 }
 //删除数据库中存储的模型数据
-+(BOOL)DeleteModelByTable
+-(BOOL)DeleteModelByTable
+{
+    NSString *sqlStr;
+    NSMutableArray *valueNameArr=[[NSMutableArray alloc]init];
+    NSMutableArray *ivalArr=[[NSMutableArray alloc]init];
+    NSMutableArray *typeArr=[[NSMutableArray alloc]init];
+    NSArray *modelArr=[self fetchIvarList:[self class]];
+    for (int i=0;i<modelArr.count; i++) {
+        
+      [ivalArr addObject:[self GetivarName:modelArr[i][@"ivarName"]]];
+      [typeArr addObject:[self GetTypeName:modelArr[i][@"type"]]];
+    }
+    for (int i=0; i<ivalArr.count; i++) {
+
+        if (i==0) {
+            if ([typeArr.firstObject isEqualToString:@"TEXT"]) {
+                i++;
+                sqlStr=[NSString stringWithFormat:@"%@=?",ivalArr[i]];
+                [valueNameArr addObject:[self valueForKey:ivalArr[i]]];
+
+            }else
+            {
+                sqlStr=[NSString stringWithFormat:@"%@=?",ivalArr[i]];
+                [valueNameArr addObject:[self valueForKey:ivalArr[i]]];
+
+            }
+
+        }else
+        {
+            if (![typeArr[i] isEqualToString:@"TEXT"]) {
+            sqlStr=[sqlStr stringByAppendingString:[NSString stringWithFormat:@" and %@=?",ivalArr[i]]];
+                [valueNameArr addObject:[self valueForKey:ivalArr[i]]];
+                
+            }
+        }
+        
+     
+        
+    }
+    NSString *deleteStr=[NSString stringWithFormat:@"delete from %@ where %@",NSStringFromClass([self class]),sqlStr];
+    BOOL success= [TableTool extecuteUpdate:deleteStr param:valueNameArr];
+    return success;
+
+}
++(BOOL)DeleteAllModelByTable
 {
     NSString *sqlStr=[NSString stringWithFormat:@"delete from %@",NSStringFromClass([self class])];
     BOOL success= [TableTool extecuteUpdate:sqlStr];
@@ -67,7 +112,7 @@
     }
     return success;
 }
-
+//删除数据库中模型表的所有数据
 -(BOOL)DeleteModelByTableWithKey:(id)key
 {
     
@@ -84,7 +129,6 @@
         NSString *ivarName=[self GetivarName:modelArr[i][@"ivarName"]];
         [typeArr addObject:type];
         [ivarArr addObject:ivarName];
-        
         
     }
     //查询数据库表中的所有数据
@@ -111,6 +155,30 @@
     return YES;
     
 }
+-(BOOL)DeleteModelByTableWithArr:(NSArray*)arr
+{
+
+
+    NSArray *resultArr=[NSClassFromString([NSString stringWithUTF8String:object_getClassName(self)]) GetModelArrByTableWithArr:arr];
+    BOOL success=NO;
+//    id model= objc_msgSend(objc_msgSend(objc_getClass([className  UTF8String]), sel_registerName("alloc")), sel_registerName("init"));
+    if (resultArr==nil ||resultArr.count==0) {
+        return  success;
+        
+    }
+    for (int i=0; i<resultArr.count; i++) {
+  
+     success= [resultArr[i] DeleteModelByTable];
+        if (!success) {
+            return success;
+        }
+    }
+    return success;
+
+    
+}
+
+
 
 +(NSMutableArray*)GetModelArrByTable
 {
@@ -140,7 +208,7 @@
 }
 
 //更新-改变数据库保存的模型
--(BOOL)ChangeModelInTable:(id)key
+-(BOOL)ChangeModelInTableWithKey:(id)key
 {
     BOOL success=NO;
     if (key==nil) {
@@ -153,6 +221,22 @@
     
     return success;
 }
+#pragma  mark-更新数据-根据数组找到合适的数据，删除再添加新的数据，达到更新数据的目的
+-(BOOL)ChangeModelInTableWithArray:(NSArray *)arr
+{
+    BOOL success=NO;
+    if (arr==nil ||arr.count==0) {
+        return success;
+    }
+    success =[self DeleteModelByTableWithArr:arr];
+    if (success) {
+        success=[self SaveDateWithModelInSQL];
+    }
+    return success;
+    
+}
+
+
 //查询数据，根据指定的条件数组去查询
 +(NSMutableArray*)GetModelArrByTableWithArr:(NSArray*)arr
 {
@@ -184,11 +268,23 @@
                    
                     for (int k=0; k<ivarNameArr.count; k++) {
                        NSString *valueName= [modelArr[j] valueForKey:ivarNameArr[k]];
-                        if ([arr[i]isEqualToString:valueName]) {
-//
-                            success=YES;
+                        
+                      NSString *typeStr=  NSStringFromClass([arr[i] class]);
+                        if ([typeStr hasSuffix:@"String"]) {
+                            if ([arr[i]isEqualToString:valueName]) {
+                                //
+                                success=YES;
+                            }
+  
+                        }else
+                        {
+                            if (![NSStringFromClass([valueName class]) hasSuffix:@"String"]) {
+                                if (arr[i] ==valueName) {
+                                    success=YES;
+                                }
+                            }
                         }
-                       
+                        
                     }
                     if (!success) {
                         [modelArr removeObjectAtIndex:j];
@@ -302,7 +398,15 @@
 
 }
 
-
++(id)GetModelByTableWithArr:(NSArray *)arr
+{
+    NSArray *resultarr=[self GetModelArrByTableWithArr:arr];
+    if (resultarr.count==0) {
+        NSLog(@"查找到的模型类为空");
+        return nil;
+    }
+    return [[self GetModelArrByTableWithArr:arr]firstObject];
+}
 +(id)GetModelByTableWithId:(id)ID
 {
     if ([self GetModelArrByTableWithId:ID].count==0) {

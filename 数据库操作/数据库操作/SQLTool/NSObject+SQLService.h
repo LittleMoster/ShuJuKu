@@ -23,13 +23,17 @@
 //和上面的方法一样，只不过返回的是模型而不是模型数组，当查询的结果有多条时，返回第一条数据。
 +(id)GetModelByTable;
 +(id)GetModelByTableWithId:(id)ID;
-
++(id)GetModelByTableWithArr:(NSArray *)arr;
+//删除数据库中存储的模型数据
+-(BOOL)DeleteModelByTable;
 //删除数据库中存储的所有模型数据
-+(BOOL)DeleteModelByTable;
++(BOOL)DeleteAllModelByTable;
 //删除符合条件的模型数据
 -(BOOL)DeleteModelByTableWithKey:(id)key;
+-(BOOL)DeleteModelByTableWithArr:(NSArray*)arr;
 
 //更新-改模型数据---把数据库中存在key的模型数据删除，然后把调用该方法的模型数据保存到数据库
--(BOOL)ChangeModelInTable:(id)key;
-
+-(BOOL)ChangeModelInTableWithKey:(id)key;
+//更新-改模型数据---传入查询的条件数组把数据库中存在的模型数据删除，然后把调用该方法的模型数据保存到数据库
+-(BOOL)ChangeModelInTableWithArray:(NSArray *)arr;
 @end
