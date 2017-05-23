@@ -18,15 +18,9 @@
 
 -(BOOL)SaveDateWithModelInSQL
 {
-
-
-    
         NSString *modelname=NSStringFromClass([self class]);
         BOOL success=NO;
         success=  [self GetTableByModel];
-    
-
-
     
         NSArray *modelarr=[self fetchIvarList:[self class]];
         NSMutableArray *KeyArr=[[NSMutableArray alloc]init];
@@ -53,8 +47,10 @@
         NSString *sqlStr=[NSString stringWithFormat:@"INSERT INTO %@ %@ VALUES %@",modelname,KeyArr,valueArr];
         
         success= [TableTool extecuteUpdate:sqlStr];
-
- 
+    if (success==NO) {
+          NSLog(@"数据保存失败");
+    }
+  
     return success;
 }
 //删除数据库中存储的模型数据
@@ -180,7 +176,7 @@
 
 
 
-+(NSMutableArray*)GetModelArrByTable
++(NSMutableArray*)GetAllModelArrByTable
 {
     return  [self GetModelArrByTableWithId:nil];
     
@@ -426,28 +422,84 @@
         return [self GetModelArrByTableWithId:nil].firstObject;
 }
 
+#pragma mark --判断模型类的成员属性是否有改变
+-(BOOL)ModelhasBeenChange
+{
+//    1.获取数据库中对应表的所有表字段
+   NSArray *tableRowNameArr= [TableTool GetAllRowNameInTableName:NSStringFromClass([self class])];
+    
+//    2.获取模型类中的成员属性
+    NSArray *modelArr= [self fetchIvarList:[self class]];
+    
+//    NSLog(@"%@",modelArr);
+
+    NSMutableArray *ivarNameArr=[[NSMutableArray alloc]init];
+    for (int i=0; i<modelArr.count; i++) {
+        
+        NSString *ivarName=[self GetivarName:modelArr[i][@"ivarName"]];
+   
+        [ivarNameArr addObject:ivarName];
+        
+    }
+//    3.两者进行比较
+    if (tableRowNameArr.count !=ivarNameArr.count) {
+        return YES;
+    }
+    BOOL changeBool=YES;
+    
+    for (int i=0; i<ivarNameArr.count; i++) {
+        for (int k=0; k<tableRowNameArr.count; k++) {
+            if ([ivarNameArr[i]isEqualToString:tableRowNameArr[k]]) {
+                changeBool=NO;
+                break;
+            }else
+            {
+                changeBool=YES;
+            }
+        }
+        if (changeBool==YES) {
+            return changeBool;
+        }
+    }
+    return changeBool;
+    
+}
+//根据模型创建数据库表
 -(BOOL)GetTableByModel
 {
     
     NSString *modelName=NSStringFromClass([self class]);
-    BOOL success=NO;
-        NSString *key = @"CFBundleShortVersionString";
-        // 获得当前软件的版本号
-        NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
-        // 获得沙盒中存储的版本号
-        NSString *sanboxVersion = [[NSUserDefaults standardUserDefaults] stringForKey:key];
-    
-        if (![currentVersion isEqualToString:sanboxVersion]) {
-            if ([TableTool isHasTableName:modelName InSQLName:SQLName]) {
-                success=[TableTool deleteTableWithName:modelName];
-            }
-            if (!success) {
-                NSLog(@"删除表失败，更新model字段出错");
-            }
-            // 存储版本号
-            [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
-            [[NSUserDefaults standardUserDefaults] synchronize];
+    BOOL success=YES;
+
+    BOOL chenge=[self ModelhasBeenChange];
+    if (chenge) {
+        NSLog(@"YES");
+        if ([TableTool isHasTableName:modelName InSQLName:SQLName]) {
+            success=[TableTool deleteTableWithName:modelName];
         }
+        if (!success) {
+            NSLog(@"删除表失败，更新model字段出错");
+        }
+
+        
+    }
+//    NSString *key = @"CFBundleShortVersionString";
+//        // 获得当前软件的版本号
+//        NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
+//        // 获得沙盒中存储的版本号
+//        NSString *sanboxVersion = [[NSUserDefaults standardUserDefaults] stringForKey:key];
+//    
+//        if (![currentVersion isEqualToString:sanboxVersion]) {
+//            if ([TableTool isHasTableName:modelName InSQLName:SQLName]) {
+//                success=[TableTool deleteTableWithName:modelName];
+//            }
+//            if (!success) {
+//                NSLog(@"删除表失败，更新model字段出错");
+//            }
+//            // 存储版本号
+//            [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
+//            [[NSUserDefaults standardUserDefaults] synchronize];
+//        }
         //判断是否有这个模型的表。有就删除表
 //    if ([TableTool isHasTableName:modelName InSQLName:SQLName])
 //    {

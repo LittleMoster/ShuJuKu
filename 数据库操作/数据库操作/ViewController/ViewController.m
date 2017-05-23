@@ -48,7 +48,7 @@
     model.url=@"dfeufh";
     model.age=142;
     [model SaveDateWithModelInSQL];
-    NSMutableArray *arr=[ProductModel GetModelArrByTableWithArr:@[model.ID,model.name]];
+    NSMutableArray *arr=[ProductModel GetAllModelArrByTable];
     NSLog(@"%ld",arr.count);
     ProductModel *model12=[ProductModel GetModelByTableWithId:@"123"];
     NSLog(@"%@",model12.url);
@@ -61,7 +61,14 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self Sqlite];
+//    [self Sqlite];
+    ProductModel *model=[[ProductModel alloc]init];
+    model.name=@"2342";
+    model.price=23.23;
+    model.ID=@"123";
+    model.url=@"dfeufh";
+    model.age=142;
+    [model DeleteModelByTable];
 }
 
 

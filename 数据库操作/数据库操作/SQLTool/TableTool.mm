@@ -117,6 +117,14 @@ static    TableTool *tool;
         if ([FileUtils fileIsAtPath:[PathUtils dbPath] ]) {
             sqldb=[[FMDatabase alloc]initWithPath:[PathUtils dbPath]];
             [sqldb open];
+            if ([isEncry isEqualToString:@"YES"]) {
+                
+                [EncryptUtils encryptDatabasePath:[PathUtils dbPath] encryptKey:EncryKey];
+            }else
+            {
+                [EncryptUtils unEncryptDatabasePath:[PathUtils dbPath] encryptKey:EncryKey];
+                [EncryptUtils unEncryptDatabasePath:[PathUtils dbPath] encryptKey:EncryKey];
+            }
             
         }else
         {
@@ -128,7 +136,7 @@ static    TableTool *tool;
                 }else
                 {
                 [EncryptUtils unEncryptDatabasePath:[PathUtils dbPath] encryptKey:EncryKey];
-                     [EncryptUtils unEncryptDatabasePath:[PathUtils dbPath] encryptKey:EncryKey];
+                [EncryptUtils unEncryptDatabasePath:[PathUtils dbPath] encryptKey:EncryKey];
                 }
 //
               
@@ -142,17 +150,7 @@ static    TableTool *tool;
               [sqldb open];
         
         }
-        if ([isEncry isEqualToString:@"YES"]) {
-            
-            [EncryptUtils encryptDatabasePath:[PathUtils dbPath] encryptKey:EncryKey];
-        }else
-        {
-            [EncryptUtils unEncryptDatabasePath:[PathUtils dbPath] encryptKey:EncryKey];
-           
-            //
-          
-
-        }
+     
     }
     return sqldb;
 }
@@ -563,7 +561,7 @@ static    TableTool *tool;
     if ([isEncry isEqualToString:@"YES"]) {
 
         NSString *sqlString=[NSString stringWithFormat:@"PRAGMA table_info(%@)",tableName];
-        FMResultSet *result=[[[TableTool shared]makeSqlDB]executeQuery:sqlString];
+        FMResultSet *result=[[[TableTool shared]service]dbexecuteQuery:sqlString];
         while ([result next]) {
             
             NSLog(@"%@", result.resultDictionary[@"name"]);

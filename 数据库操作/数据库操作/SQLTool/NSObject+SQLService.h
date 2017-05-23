@@ -15,7 +15,7 @@
 //模型类调用这个方法，然后把数据保存到数据库中,已模型的类名为表名字，没有表会自动创建；
 -(BOOL)SaveDateWithModelInSQL;
 //通过数据库表创建模型数组
-+(NSMutableArray*)GetModelArrByTable;
++(NSMutableArray*)GetAllModelArrByTable;
 //根据条件查找数据库并返回符合条件的模型数组
 +(NSMutableArray*)GetModelArrByTableWithId:(id)ID;
 //根据条件查找数据库并返回符合条件的模型数组

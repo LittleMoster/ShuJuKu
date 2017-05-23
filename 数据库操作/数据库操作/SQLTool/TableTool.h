@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "FMDB.h"
 #define isEncry @"NO"  //YES代表加密--NO代表不加密
-#define EncryKey @"123456abc"
+#define EncryKey @"123456abc"  //加密的key
 
 
 /*
@@ -67,4 +67,6 @@
 +(NSArray*)getAllTableName:(NSString*)sqlName;
 //是否存在这个表
 +(BOOL)isHasTableName:(NSString *)tableName InSQLName:(NSString *)sqlName;
+//获取表中的所有字段名
+
 @end

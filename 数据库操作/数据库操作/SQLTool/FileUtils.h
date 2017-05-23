@@ -19,5 +19,5 @@
 
 +(BOOL)copyItemAtPath:(NSString *)scrPath toPath:(NSString *)toPath;
 
-//+(BOOL)fileExistsAtPath:(NSString *)path;
++(BOOL)writDataToPath:(NSString*)path data:(NSData*)data;
 @end

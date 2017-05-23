@@ -31,4 +31,8 @@
 {
     return [[NSFileManager defaultManager]createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
 }
++(BOOL)writDataToPath:(NSString *)path data:(NSData *)data
+{
+  return   [data writeToFile:path atomically:YES];
+}
 @end

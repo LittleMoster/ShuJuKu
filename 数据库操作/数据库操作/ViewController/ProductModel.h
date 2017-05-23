@@ -17,4 +17,5 @@
 @property(nonatomic,strong)NSString *url;
 @property(nonatomic,strong)NSString *ID;
 
+
 @end
