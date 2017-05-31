@@ -483,28 +483,8 @@
 
         
     }
-//    NSString *key = @"CFBundleShortVersionString";
-//        // 获得当前软件的版本号
-//        NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
-//        // 获得沙盒中存储的版本号
-//        NSString *sanboxVersion = [[NSUserDefaults standardUserDefaults] stringForKey:key];
-//    
-//        if (![currentVersion isEqualToString:sanboxVersion]) {
-//            if ([TableTool isHasTableName:modelName InSQLName:SQLName]) {
-//                success=[TableTool deleteTableWithName:modelName];
-//            }
-//            if (!success) {
-//                NSLog(@"删除表失败，更新model字段出错");
-//            }
-//            // 存储版本号
-//            [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
-//            [[NSUserDefaults standardUserDefaults] synchronize];
-//        }
-        //判断是否有这个模型的表。有就删除表
-//    if ([TableTool isHasTableName:modelName InSQLName:SQLName])
-//    {
-//        [TableTool deleteTableWithName:modelName];
-//    }
+
+  
     //判断是否有这个模型的表。没有就创建表
     
     if (![TableTool isHasTableName:modelName InSQLName:SQLName]) {

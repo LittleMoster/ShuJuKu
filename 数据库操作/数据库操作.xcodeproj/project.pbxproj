@@ -17,6 +17,7 @@
 		951EBE071E821F6800F885CE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 951EBE061E821F6800F885CE /* libsqlite3.0.tbd */; };
 		951EBE2D1E82486600F885CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 951EBE2A1E82486600F885CE /* AppDelegate.m */; };
 		951EBE2E1E82486600F885CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951EBE2C1E82486600F885CE /* ViewController.m */; };
+		957E5AF71ED91B740082E646 /* EditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 957E5AF61ED91B740082E646 /* EditView.m */; };
 		95A98EA61EBADC7400254AB0 /* EncryptUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A98E921EBADC7400254AB0 /* EncryptUtils.m */; };
 		95A98EA71EBADC7400254AB0 /* DbService.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A98E971EBADC7400254AB0 /* DbService.m */; };
 		95A98EA81EBADC7400254AB0 /* FMEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A98E991EBADC7400254AB0 /* FMEncryptDatabase.m */; };
@@ -46,6 +47,8 @@
 		951EBE2C1E82486600F885CE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9571E5C51E88E68500793812 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9571E5C61E88E91200793812 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		957E5AF51ED91B740082E646 /* EditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditView.h; sourceTree = "<group>"; };
+		957E5AF61ED91B740082E646 /* EditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditView.m; sourceTree = "<group>"; };
 		95A98E911EBADC7400254AB0 /* EncryptUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptUtils.h; sourceTree = "<group>"; };
 		95A98E921EBADC7400254AB0 /* EncryptUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptUtils.m; sourceTree = "<group>"; };
 		95A98E951EBADC7400254AB0 /* ColumnPropertyMappingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnPropertyMappingDelegate.h; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				951EBE2C1E82486600F885CE /* ViewController.m */,
 				950D2E591E8F915500517DB9 /* ProductModel.h */,
 				950D2E5A1E8F915500517DB9 /* ProductModel.m */,
+				957E5AF51ED91B740082E646 /* EditView.h */,
+				957E5AF61ED91B740082E646 /* EditView.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				95A98EA61EBADC7400254AB0 /* EncryptUtils.m in Sources */,
 				95A98EA81EBADC7400254AB0 /* FMEncryptDatabase.m in Sources */,
 				951EBE2E1E82486600F885CE /* ViewController.m in Sources */,
+				957E5AF71ED91B740082E646 /* EditView.m in Sources */,
 				95A98EAA1EBADC7400254AB0 /* FileUtils.m in Sources */,
 				95A98EAB1EBADC7400254AB0 /* NSObject+SQLService.m in Sources */,
 				950D2E5B1E8F915500517DB9 /* ProductModel.m in Sources */,

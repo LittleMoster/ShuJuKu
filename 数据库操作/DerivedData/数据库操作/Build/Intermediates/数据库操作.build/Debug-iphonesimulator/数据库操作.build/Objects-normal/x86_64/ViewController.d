@@ -11,6 +11,7 @@ dependencies: \
   /Users/cguo/Desktop/ShuJuKu/数据库操作/数据库操作/EncryptSQL/EncryptUtils.h \
   /Users/cguo/Desktop/ShuJuKu/数据库操作/数据库操作/SQLTool/NSObject+SQLService.h \
   数据库操作/ViewController/ProductModel.h \
+  数据库操作/ViewController/EditView.h \
   Pods/Masonry/Masonry/Masonry.h Pods/Masonry/Masonry/MASUtilities.h \
   Pods/Masonry/Masonry/View+MASAdditions.h \
   Pods/Masonry/Masonry/MASConstraintMaker.h \
