@@ -8,16 +8,29 @@
 
 #import "EditView.h"
 #import "TableTool.h"
+#import "ViewController.h"
 #import <UIKit/UIKit.h>
-
+#import "ProductModel.h"
 @interface EditView ()
+@property (strong, nonatomic) IBOutlet UILabel *label1;
+@property (strong, nonatomic) IBOutlet UILabel *label2;
+@property (strong, nonatomic) IBOutlet UILabel *label3;
 
 @end
 @implementation EditView
 
 
-
-
+-(void)setModel:(ProductModel *)model
+{
+    _model=model;
+    self.label1.text=model.name;
+    self.label2.text=model.url;
+    self.label3.text=model.ID;
+}
++(instancetype)ADDView
+{
+  return   [[[NSBundle mainBundle] loadNibNamed:@"EditView" owner:nil options:nil] lastObject];
+}
 +(void)EditProductWhenEncryWayChange
 {
     
@@ -25,7 +38,7 @@
     NSString *key = @"CFBundleShortVersionString";
     NSString *IsEncryKey=@"ischangeEncry";
     
- 
+   [self exitApplication];
 
       [[NSNotificationCenter defaultCenter]postNotificationName:@"EditProduct" object:self];
     // 获得当前软件的版本号
@@ -41,7 +54,8 @@
             //版本更新了并且数据库是否加密的选择也改变了，需要退出程序，避免数据库切换出错
             
       
-            [self exitApplication];
+            [[[ViewController alloc]init]exitApplication];
+//            [self exitApplication];
         
             
         }
@@ -55,10 +69,7 @@
     }
     
 }
-+(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    
-}
+
 
 + (void)exitApplication {
     

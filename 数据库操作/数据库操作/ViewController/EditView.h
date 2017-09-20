@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ProductModel;
 
 @interface EditView : UIView
 
 
 +(void)EditProductWhenEncryWayChange;
 
+@property(nonatomic,strong)ProductModel *model;
++(instancetype)ADDView;
 @end

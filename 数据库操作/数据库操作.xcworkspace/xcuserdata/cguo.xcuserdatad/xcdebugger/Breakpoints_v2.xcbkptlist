@@ -553,22 +553,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x6570;&#x636e;&#x5e93;&#x64cd;&#x4f5c;/ViewController/ViewController.m"
-            timestampString = "517557376.861224"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "-Sqlite"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "&#x6570;&#x636e;&#x5e93;&#x64cd;&#x4f5c;/SQLTool/NSObject+SQLService.m"
             timestampString = "516766494.692486"
             startingColumnNumber = "9223372036854775807"
@@ -586,11 +570,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x6570;&#x636e;&#x5e93;&#x64cd;&#x4f5c;/ViewController/EditView.m"
-            timestampString = "517558033.776635"
+            timestampString = "518428896.829142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "-animationFinished:finished:context:"
             landmarkType = "7">
          </BreakpointContent>

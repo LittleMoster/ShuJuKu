@@ -28,6 +28,10 @@
 		<data>
 		9pWQipGfN1tFW1+j/CtmVaNv2L4=
 		</data>
+		<key>EditView.nib</key>
+		<data>
+		wFVd6fE9p59H2nLuofjp3InmZ04=
+		</data>
 		<key>Frameworks/FMDB.framework/FMDB</key>
 		<data>
 		4QoCaaDW6qItrhWrVLKxkeH4jvk=
@@ -151,6 +155,17 @@
 			<key>hash2</key>
 			<data>
 			Nz+YNqA2+IMB86yUaWYd0jlOqqkQ4Fb6G+cTqBfDZCA=
+			</data>
+		</dict>
+		<key>EditView.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wFVd6fE9p59H2nLuofjp3InmZ04=
+			</data>
+			<key>hash2</key>
+			<data>
+			P+RibDcptf9IDcDRESJfED4eCrP8Y/Rf1nn2NaWqvuM=
 			</data>
 		</dict>
 		<key>Frameworks/FMDB.framework/FMDB</key>

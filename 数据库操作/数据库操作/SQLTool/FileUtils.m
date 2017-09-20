@@ -26,7 +26,7 @@
 {
     return [[NSFileManager defaultManager]removeItemAtPath:path error:nil];
 }
-
+//创建文件目录
 +(BOOL)makeDirectory:(NSString*)path
 {
     return [[NSFileManager defaultManager]createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];

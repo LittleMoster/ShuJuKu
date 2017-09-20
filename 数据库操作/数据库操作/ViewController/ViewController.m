@@ -23,6 +23,7 @@
 {
     UIView *view1;
     UIView *view2;
+   
 }
 @end
 
@@ -30,9 +31,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     
-    [EditView EditProductWhenEncryWayChange];
+    ProductModel *model=[[ProductModel alloc]init];
+    model.name=@"2342";
+    model.price=23.23;
+    model.ID=@"123";
+    model.url=@"dfeufh";
+    model.age=142;
+
+
+//    [EditView EditProductWhenEncryWayChange];
 //      [self Sqlite];
     
 }
@@ -56,10 +64,42 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
 
+
+//    [self exitApplication];
+}
+
+- (void)exitApplication {
     
-    [EditView EditProductWhenEncryWayChange];
+    [UIView beginAnimations:@"exitApplication" context:nil];
+    
+    [UIView setAnimationDuration:0.5];
+    
+    [UIView setAnimationDelegate:self];
+    
+    //     [UIView setAnimationTransition:UIViewAnimationCurveEaseOut forView:self.view.window cache:NO];
+    
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:[UIApplication sharedApplication].keyWindow  cache:NO];
+    
+    [UIView setAnimationDidStopSelector:@selector(animationFinished:finished:context:)];
+    
+    //self.view.window.bounds = CGRectMake(0, 0, 0, 0);
+    
+    [UIApplication sharedApplication].keyWindow.bounds = CGRectMake(0, 0, 0, 0);
+    
+    [UIView commitAnimations];
+    
 }
 
 
+
+- (void)animationFinished:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
+    
+    if ([animationID compare:@"exitApplication"] == 0) {
+        
+        exit(0);
+        
+    }
+    
+}
 @end
 

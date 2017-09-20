@@ -67,6 +67,6 @@
 +(NSArray*)getAllTableName:(NSString*)sqlName;
 //是否存在这个表
 +(BOOL)isHasTableName:(NSString *)tableName InSQLName:(NSString *)sqlName;
-//获取表中的所有字段名
+
 
 @end
