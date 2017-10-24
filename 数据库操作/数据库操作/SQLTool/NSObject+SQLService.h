@@ -21,9 +21,9 @@
 //根据条件查找数据库并返回符合条件的模型数组
 +(NSMutableArray*)GetModelArrByTableWithArr:(NSArray*)arr;
 //和上面的方法一样，只不过返回的是模型而不是模型数组，当查询的结果有多条时，返回第一条数据。
-+(id)GetModelByTable;
-+(id)GetModelByTableWithId:(id)ID;
-+(id)GetModelByTableWithArr:(NSArray *)arr;
++(instancetype)GetModelByTable;
++(instancetype)GetModelByTableWithId:(id)ID;
++(instancetype)GetModelByTableWithArr:(NSArray *)arr;
 //删除数据库中存储的模型数据
 -(BOOL)DeleteModelByTable;
 //删除数据库中存储的所有模型数据

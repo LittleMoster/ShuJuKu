@@ -323,7 +323,8 @@
 
             if (Id==nil) {
                 if ([typeArr[i] isEqualToString:@"TEXT"]) {
-                    NSString *valueName=[s.resultDictionary[ivarArr[i]] substringFromIndex:1];
+                    NSString *valueName=[s.resultDictionary[ivarArr[i]] substringFromIndex:6];
+//                    valueName
                     [model setValue:valueName forKey:ivarArr[i]];
 
                 }else
@@ -334,12 +335,11 @@
                 {
                     return model;
                 }
-
             }else
             {
                 if ([Id isKindOfClass:[NSString class]]) {
                     NSString *valueName=[NSString stringWithFormat:@"%@", s.resultDictionary[ivarArr[i]]];
-                    valueName=[[self replaceUnicode:valueName] substringFromIndex:1];
+                    valueName=[[self replaceUnicode:valueName] substringFromIndex:6];
                     if ([Id isEqualToString:valueName]) {
                         for (int j=0; j<ivarArr.count; j++) {
                             
@@ -394,7 +394,7 @@
 
 }
 
-+(id)GetModelByTableWithArr:(NSArray *)arr
++(instancetype)GetModelByTableWithArr:(NSArray *)arr
 {
     NSArray *resultarr=[self GetModelArrByTableWithArr:arr];
     if (resultarr.count==0) {
@@ -403,7 +403,7 @@
     }
     return [[self GetModelArrByTableWithArr:arr]firstObject];
 }
-+(id)GetModelByTableWithId:(id)ID
++(instancetype)GetModelByTableWithId:(id)ID
 {
     if ([self GetModelArrByTableWithId:ID].count==0) {
         NSLog(@"%@模型类为空", NSStringFromClass([self class]));
@@ -412,7 +412,7 @@
     }
     return [self GetModelArrByTableWithId:ID].firstObject;
 }
-+(id)GetModelByTable
++(instancetype)GetModelByTable
 {
     if ([self GetModelArrByTableWithId:nil].count==0) {
         NSLog(@"%@模型类为空", NSStringFromClass([self class]));
